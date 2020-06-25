@@ -30,3 +30,4 @@ The designs were created to the following widths:
 
 - Family: [Raleway](https://fonts.google.com/specimen/Raleway)
 - Weights: 400, 700
+- font-family: 'Raleway', sans-serif;
