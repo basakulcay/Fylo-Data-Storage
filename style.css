@@ -45,10 +45,10 @@ body {
 
 .data {
   background-color: hsl(228, 56%, 26%);
-  width: 450px;
+  width: 500px;
   height: 140px;
   position: relative;
-  top: 13%;
+  top: 3%;
   left: 47%;
   text-align: left;
   padding-left: 40px;
@@ -68,7 +68,7 @@ body {
 }
 
 #zero {
-  padding-right: 300px;
+  padding-right: 390px;
 }
 
 /*.data progress {
@@ -78,7 +78,7 @@ body {
 
 .progress-bar {
   position: relative;
-  width: 400px;
+  width: 480px;
   height: 1.5em;
   background-color: rgb(15, 27, 61);
   border-radius: 1.5rem;
@@ -104,6 +104,21 @@ body {
   padding: 0.5em;
 }
 
+.progress-bar::after {
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: calc(var(--width, 0) * 1%);
+  top: 0.25em;
+  bottom: 0.25em;
+  min-width: 0.05rem;
+  max-width: 0.05rem;
+  background-color: white;
+  border-radius: 1.5em;
+  padding: 0.5em;
+}
+
 .attribution {
   position: absolute;
   bottom: 0;
@@ -120,13 +135,16 @@ body {
   position: relative;
   background: white;
   border-radius: 1rem 1rem 0 1rem;
-  height: 80px;
-  width: 250px;
+  height: 70px;
+  width: 200px;
   text-align: center;
+  left: 980px;
+  top: 30px;
+  z-index: 100;
 }
 
 .speech-bubble p {
-  padding-top: 20px;
+  padding-top: 13px;
   color: grey;
   font-size: 16px;
   font-weight: 700;
@@ -141,7 +159,7 @@ body {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 93%;
+  left: 91.5%;
   width: 0;
   height: 0;
   border: 34px solid transparent;
